@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Testnav </title>
+	  <link href="assets/css/newstyle.css" rel="stylesheet">
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  
+	</head>
+	<body  onclick="closeNav()">
+		<div id="nav">
+
+			<div style="float:left">
+				<img id="logo" src="assets/images/bulb.png"  width="120px" height="80px">
+			</div>
+			
+			
+			<div id="heading">IDEA</div>
+			
+		
+			<div id="btn" onclick="openNav(event)"><i class="fa fa-bars"></i></div>
+			
+			<div id="mySidenav" class="sidenav"   onclick="event.stopPropagation();">
+				 <a  href="javascript:void(0)" class="closebtn" id="clsbtn" class="sideop" onclick="closeNav()">&times;</a>
+				 <a class="sideop" id="sel1"  href="#">About</a>
+				 <a class="sideop" id="sel2"    href="#">Services</a>
+				 <a class="sideop" id="sel3"    href="#">Clients</a>
+				 <a class="sideop" id="sel4"    href="#">Contact</a>
+			</div>
+				
+			<div id="li">
+				<a  href="" class="listel" id="li1" >home</a>
+				<a class="listel"  id="li2"  href="">services</a>
+				<a class="listel"  id="li3"  href="">portfolios</a>	
+				<a class="listel"  id="li4"  href="">plans</a>	
+				<a class="listel"  id="li5"  href="">about us</a>
+			</div>
+		</div>
+		
+		<div id="desc">
+		
+		
+		
+				
+				
+		<div id="mySidecolor">
+		
+		  <div href="#" id="about" class="cpick">
+			
+				<div id="color-picker-wrapper">
+					<input type="color" value="#000000" id="color-picker">
+				</div>
+			
+			<div id="chead">Color</div>
+			
+			</div>
+
+		</div>
+		
+	
+		<button onclick="apply()">Apply</button>
+		
+		
+		<div id="desccontent">
+		<h2 >hello</h2>
+		<p style="font-size:large">Non-functional webiste template.Inspiration taken from keyboard backlight</p>
+		</div>
+		
+		</div>
+		
+		<div id="blocks">
+			<section id="sec1">
+				<h1 class="sechead" id="he1">HELLO</h1>
+				<div class="para"  id="par1" >para:Compared to display: inline , 
+				the major difference is that display:para:Compared to display:inline, 
+				the major difference is that display:para:Compared to display: inline , 
+				the major difference is that display:para:Compared to display:inline , 
+				the major difference is that display:para:Compared to display: inline , 
+				the major difference is that display:
+				</div>
+
+			</section>
+			<section id="sec2">
+				<h1  class="sechead" id="he2">MY</h1>
+				<div class="para"  id="par2"   >para:Compared to display: inline , 
+				the major difference is that display:</div>
+			</section>
+			<section id="sec3">
+				<h1 class="sechead" id="he3">FRIEND</h1>
+				<div class="para"  id="par3"   >para:Compared to display: inline , 
+				the major difference is that display:</div>
+			</section>
+		</div>
+		
+		<footer>
+			<div class=registerform>
+			
+		<form action="/action_page.php">
+			<input type="text" placeholder="Enter name" name="name" id="name" required>
+			<input type="email" placeholder="Enter email" name="mail" id="mail" required>
+			<input type="text" placeholder="Write about yourself" name="psw-repeat" id="psw-repeat" style="height:150px;" required>
+		</form>
+			</div>
+				
+		</footer>
+		
+
+
+		
+	<script>
+	function openNav(event) {
+      event.stopPropagation();
+	  document.getElementById("mySidenav").style.width = "350px"; 
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";  
+      document.body.style.backgroundColor = "white"; 
+	}
+	
+	
+	
+	
+	var color_picker = document.getElementById("color-picker");
+		var color_picker_wrapper = document.getElementById("color-picker-wrapper");
+		color_picker.onchange = function() {
+				color_picker_wrapper.style.backgroundColor = color_picker.value;    
+										   }
+		color_picker_wrapper.style.backgroundColor = color_picker.value;
+		
+		function apply() {
+		
+		   var set = document.getElementById('desc');
+		   var set2 = document.getElementById('li');
+		   var set3 = document.getElementById('about'); 
+		   var set4 = document.getElementById('btn');		    
+		   var set5 = document.getElementById('sec1');		    
+		   var set6 = document.getElementById('sec2');	  
+		   var set7 = document.getElementById('sec3');  
+		   var set8 = document.getElementById('li1');		    
+		   var set9 = document.getElementById('li2');	  
+		   var set10 = document.getElementById('li3');		    
+		   var set11 = document.getElementById('li4');		    
+		   var set12 = document.getElementById('li5');
+		   var set13 = document.getElementById('blocks');
+		   
+		   var set14 = document.getElementById('he1');
+		   var set15 = document.getElementById('he2');
+		   var set16 = document.getElementById('he3');
+		   
+		   		   
+		   var set17 = document.getElementById('par1');
+		   var set18 = document.getElementById('par2');
+		   var set19 = document.getElementById('par3');
+		   
+		   
+		   var set20 = document.getElementById('sel1');
+		   var set21 = document.getElementById('sel2');
+		   var set22 = document.getElementById('sel3');
+		   var set23 = document.getElementById('sel4');
+		   
+		   var set24 = document.getElementById('clsbtn');
+		   
+		   var set25 = document.getElementById('logo');
+		   
+		 
+		   var shlist=[set,set2,set3,set4,set5,set6,set7,
+					   set8,set9,set10,set11,set12,set13,
+					   set14,set15,set16,set17,set18,set19,
+					   set20,set21,set22,set23,set24,set25
+					  ];
+		   
+		   /*
+		   
+		   shlist.push(set);
+		   shlist.push(set2);*/
+
+		   /*var offsetX = "0";
+		   var offsetY = "0";
+		   var blurRadius = "3px";
+		   var spreadRadius ="3px";*/
+		   var color = document.getElementById('color-picker').value;
+		 
+		   
+		   /*set.style.boxShadow = "0" + ' ' + "0" + ' ' + "7px" + ' ' + "7px" + ' ' + color;
+		   
+		   set2.style.boxShadow = "0" + ' ' + "0" + ' ' + "7px" + ' ' + "7px" + ' ' + color;*/
+		   for (x of shlist){
+		   
+		   x.style.boxShadow = "0" + ' ' + "0" + ' ' + "5px" + ' ' + "3.5px" + ' ' + color;
+			}
+			
+			
+		   shlist[24].style.boxShadow = "0" + ' ' + "0" + ' ' + "5px" + ' ' + "4.5px" + ' ' + color;
+			
+		}
+	
+	</script>
+	
+			
+		
+		
+	</body>
+</html>	
